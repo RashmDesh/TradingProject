@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <div class="container">
+            <h2>Upload file</h2>
+          
+                <form method="POST">
+                {% csrf_token %}
+                {{form.as_ul}}
+                <br>
+                <button type="submit"  class="btn btn-primary" >upload</button>
+                </form>
+            </center>
+            
+        </div>
+    </body>
+</html>
